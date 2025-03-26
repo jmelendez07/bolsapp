@@ -1,5 +1,5 @@
 <main class="flex-1 md:px-10">
-    <section class="w-full py-12 md:py-24">
+    <section class="w-full py-12 md:py-24 grid place-items-center">
         <div class="container px-4 md:px-6">
             <div class="flex flex-col items-start gap-4 md:flex-row md:justify-between">
                 <div class="space-y-1">
@@ -21,7 +21,7 @@
             {{-- Aquí iría tu JobList, que puedes reemplazar con un componente o directiva de Laravel --}}
         </div>
     </section>
-    <section class="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+    <section class="w-full py-12 md:py-24 lg:py-32 bg-muted/50 grid place-items-center">
         <div class="container px-4 md:px-6">
             <div class="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
                 <div class="flex flex-col justify-center space-y-4">

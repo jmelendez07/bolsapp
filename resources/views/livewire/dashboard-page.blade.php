@@ -1,3 +1,3 @@
 <div class="">
-    <p>hola mundo</p>
+    <p wire:text="role"></p>
 </div>

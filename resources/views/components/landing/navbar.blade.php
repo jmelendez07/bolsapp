@@ -1,4 +1,4 @@
-<header class="sticky top-0 z-40 w-full border-b border-gray-200 bg-white/80 backdrop-blur-sm backdrop-grayscale px-2 md:px-16">
+<header class="sticky top-0 z-40 w-full border-b border-gray-200 bg-white/80 backdrop-blur-sm backdrop-grayscale px-2 md:px-16 flex items-center justify-center">
     <div class="container flex h-16 items-center justify-between">
         <a href="/" class="flex items-center space-x-2" wire:navigate>
             <span class="text-xl font-semibold">Bolsapp</span>

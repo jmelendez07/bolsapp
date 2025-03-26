@@ -28,7 +28,7 @@
             class="fixed left-0 z-30 flex h-svh w-60 shrink-0 flex-col border-r border-outline bg-white p-4 transition-transform duration-300 md:w-64 md:translate-x-0 md:relative"
             x-bind:class="sidebarIsOpen ? 'translate-x-0' : '-translate-x-60'" aria-label="sidebar navigation">
             <!-- logo  -->
-            <a href="#" class="ml-2 w-fit text-2xl font-bold text-on-surface-strong mb-10">
+            <a href="/" class="ml-2 w-fit text-2xl font-bold text-on-surface-strong mb-10">
                 <span class="sr-only">Pagina principal</span>
                 <div class="flex items-center gap-2 flex-wrap">
                     <img 
@@ -121,6 +121,8 @@
                     <span>Settings</span>
                 </a>
             </div>
+
+            @live
         </nav>
 
         <div class="h-svh w-full overflow-y-auto bg-gray-100">
@@ -219,20 +221,7 @@
                         </div>
 
                         <div class="flex flex-col">
-                            <a href="#"
-                                class="flex items-center gap-2 px-2 py-3 text-sm font-medium text-on-surface underline-offset-2 hover:bg-red-600/5 hover:text-on-surface-strong focus-visible:underline focus:outline-hidden"
-                                role="menuitem">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                    class="size-5 shrink-0" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M3 4.25A2.25 2.25 0 0 1 5.25 2h5.5A2.25 2.25 0 0 1 13 4.25v2a.75.75 0 0 1-1.5 0v-2a.75.75 0 0 0-.75-.75h-5.5a.75.75 0 0 0-.75.75v11.5c0 .414.336.75.75.75h5.5a.75.75 0 0 0 .75-.75v-2a.75.75 0 0 1 1.5 0v2A2.25 2.25 0 0 1 10.75 18h-5.5A2.25 2.25 0 0 1 3 15.75V4.25Z"
-                                        clip-rule="evenodd" />
-                                    <path fill-rule="evenodd"
-                                        d="M6 10a.75.75 0 0 1 .75-.75h9.546l-1.048-.943a.75.75 0 1 1 1.004-1.114l2.5 2.25a.75.75 0 0 1 0 1.114l-2.5 2.25a.75.75 0 1 1-1.004-1.114l1.048-.943H6.75A.75.75 0 0 1 6 10Z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <span>Cerrar sesión</span>
-                            </a>
+                            @livewire('logout')
                         </div>
                     </div>
                 </div>
